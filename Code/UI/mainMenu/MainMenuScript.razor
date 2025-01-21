@@ -1,0 +1,58 @@
+﻿@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root>
+    <div class="menu">
+        <h2>
+            SnakeMaster
+        </h2>
+        <div class="buttons">
+            <button class="btn" onclick="@StartDefaultGame">
+                Default game
+            </button>
+            <button class ="btn">
+                Infinite game 🔒
+            </button>
+            <button class="btn">
+                maps 🔒
+            </button>
+            <button class="btn" onclick="@QuitGame">
+                Quit
+            </button>
+        </div>
+    </div>
+
+    <div class="Score">
+        <h2 class="bestScore">
+            Best score: @Sandbox.Services.Stats.LocalPlayer.Get("FoodEaten").Max
+        </h2>
+    </div>
+
+</root>
+
+@code
+{
+    public int Score;
+    [Property] SoundFile SoundFile { get; set; }
+    protected override void OnStart()
+    {
+        base.OnStart();
+        Sound.StopAll(0);
+        Sound.PlayFile(SoundFile);
+
+
+    }
+    void StartDefaultGame()
+    {
+        var newScene = new SceneLoadOptions();
+        newScene.SetScene("scenes/InfiniteRun.scene");
+        Scene.Load(newScene);
+    }
+    void QuitGame()
+    {
+        Game.Close();  
+    }
+    protected override int BuildHash() => System.HashCode.Combine(Sandbox.Services.Stats.LocalPlayer.Get("FoodEaten"));
+}

@@ -1,0 +1,22 @@
+MyUi
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-family: Poppins;
+	font-size:24px;
+	
+	> .vitals
+	{
+		position:absolute;
+		font-size:74px;
+		top:32px;
+		left:32px;
+		font-weight:bold;
+		text-stroke: 8px black;
+		color:white;
+	}
+
+}

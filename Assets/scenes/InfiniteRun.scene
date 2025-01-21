@@ -1,0 +1,801 @@
+{
+  "__guid": "325a4042-0696-43dd-a79d-dcc314299ba3",
+  "GameObjects": [
+    {
+      "__guid": "dc70ab0f-7d0e-4d04-9543-c8a3401d6694",
+      "Flags": 0,
+      "Name": "Scene Information",
+      "Position": "0,-124.4809,0",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SceneInformation",
+          "__guid": "7c75d231-3b71-4e9f-bfa6-44d694d347bb",
+          "Author": null,
+          "Changes": "",
+          "Description": "",
+          "Group": null,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "SceneTags": "",
+          "Title": "minimal",
+          "Version": null
+        }
+      ]
+    },
+    {
+      "__guid": "bfc59c12-1ed2-4f91-8956-a95a315eac3c",
+      "Flags": 0,
+      "Name": "Sun",
+      "Rotation": "-0.0729315,0.4822396,0.1305433,0.8631827",
+      "Tags": "light_directional,light",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.DirectionalLight",
+          "__guid": "d3659344-a90d-48fa-927a-095f70fe041f",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "0.94419,0.97767,1,1",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Shadows": true,
+          "SkyColor": "0.2532,0.32006,0.35349,1"
+        }
+      ]
+    },
+    {
+      "__guid": "00344a8c-fa5e-45ae-b12a-10bb781a1dc3",
+      "Flags": 0,
+      "Name": "2D Skybox",
+      "Tags": "skybox",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SkyBox2D",
+          "__guid": "de79e9e0-5c37-4c54-ac67-bfcdb1d5483b",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "SkyIndirectLighting": true,
+          "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.EnvmapProbe",
+          "__guid": "f3e304db-baab-4c1a-a4ec-8442585c2d62",
+          "Bounds": {
+            "Mins": "-512,-512,-512",
+            "Maxs": "512,512,512"
+          },
+          "DelayBetweenUpdates": 0.1,
+          "Feathering": 0.02,
+          "FrameInterval": 5,
+          "MaxDistance": 512,
+          "MultiBounce": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Projection": "Sphere",
+          "RenderDynamically": false,
+          "Texture": "textures/cubemaps/default2.vtex",
+          "TintColor": "1,1,1,1",
+          "UpdateStrategy": "OnEnabled",
+          "ZFar": 4096,
+          "ZNear": 16
+        }
+      ]
+    },
+    {
+      "__guid": "6ad70641-3c6c-4402-9c85-9a4969af4764",
+      "Flags": 0,
+      "Name": "Plane",
+      "Scale": "97.93702,94.57052,34.82039",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "0b6a18bf-fdb8-4661-970e-ef635bfa9baa",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/snake/groundmat.vmat",
+          "Model": "models/dev/plane.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "0.39546,0.51163,0.27128,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "0715cb55-1733-4f5e-8560-c288b8695631",
+          "Center": "0,0,-5",
+          "Friction": null,
+          "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Scale": "100,100,10",
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        }
+      ]
+    },
+    {
+      "__guid": "addf7368-9067-449a-9100-3c741586a467",
+      "Flags": 0,
+      "Name": "Camera",
+      "Position": "-2117.083,0,1073.947",
+      "Rotation": "0,0.2419519,0,0.9702882",
+      "Tags": "maincamera",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "aa20bc4f-64c1-4284-9f94-f1efdf57ba86",
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 65.78,
+          "IsMainCamera": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        }
+      ]
+    },
+    {
+      "__guid": "4653cac8-1198-489f-a71b-8d03857d5471",
+      "Flags": 0,
+      "Name": "Player",
+      "Position": "-7.699574,415.1463,29.83375",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "21134c6e-07ae-49d3-b0fc-270b829ab057",
+          "BodyGroups": 18446744073709551615,
+          "CreateAttachments": false,
+          "MaterialGroup": null,
+          "MaterialOverride": "materials/snake/snakeheadmat.vmat",
+          "Model": "snakemodels/snakehead/snakehead.vmdl",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "2cfbbfad-4e9a-4e21-82d3-31fd5a437fdb",
+          "Center": "-28.62826,-0.4915428,25.11504",
+          "Friction": null,
+          "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Scale": "26.31005,58.60493,82.23009",
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
+        },
+        {
+          "__type": "SnakeScript",
+          "__guid": "b6188ded-3872-4684-a277-93dc31d371fe",
+          "BiteSound": "sounds/snakebite.vsnd",
+          "Epty": {
+            "_type": "gameobject",
+            "go": "6a48a49e-9fac-41d8-b3f7-c7e63db5ee96"
+          },
+          "Food": {
+            "_type": "gameobject",
+            "prefab": "food.prefab"
+          },
+          "Speed": 350,
+          "TailEnd": {
+            "_type": "gameobject",
+            "prefab": "tailend.prefab"
+          },
+          "TailPart": {
+            "_type": "gameobject",
+            "prefab": "tails.prefab"
+          },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        }
+      ]
+    },
+    {
+      "__guid": "6a48a49e-9fac-41d8-b3f7-c7e63db5ee96",
+      "Flags": 0,
+      "Name": "Object",
+      "Position": "-7.699574,415.3374,30",
+      "Enabled": true
+    },
+    {
+      "__guid": "b1c684c0-b974-402d-8298-d199a9d0f91a",
+      "Flags": 0,
+      "Name": "FenceHolder",
+      "Position": "-78.9742,40.66604,1.747066",
+      "Enabled": true,
+      "Children": [
+        {
+          "__guid": "81612229-5903-4805-b66d-cad847ca9bc1",
+          "Flags": 0,
+          "Name": "fence (34)",
+          "Position": "-580.902,1008.488,-1.252773",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "bdc05014-74b5-4cba-a388-0c50ca9ec9e1",
+          "Flags": 0,
+          "Name": "fence (1)",
+          "Position": "-363.2152,1007.595,-1.252773",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "8a754325-28fe-4ddf-b6fd-3dd88aba1ac2",
+          "Flags": 0,
+          "Name": "fence (2)",
+          "Position": "-142.6835,1008.488,-1.252773",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "7bea7127-b605-46ed-8af3-f6e452756b17",
+          "Flags": 0,
+          "Name": "fence (3)",
+          "Position": "77.27783,1008.488,-1.252773",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "3c9d5401-9e9a-45c4-b035-9b60c58619ab",
+          "Flags": 0,
+          "Name": "fence (4)",
+          "Position": "297.7467,1008.488,-1.252773",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "2eefb159-5f01-4bdb-89cc-ca16b5f9fb77",
+          "Flags": 0,
+          "Name": "fence (5)",
+          "Position": "516.7626,1008.488,-1.252773",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "c1848862-243d-49e3-80d2-132f70069cc0",
+          "Flags": 0,
+          "Name": "fence (16)",
+          "Position": "856.3648,-1035.274,-1.252651",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Scale": "0.6900641,1,1",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "12241bd3-dd2b-47f4-a717-c3fa2437feb3",
+          "Flags": 0,
+          "Name": "fence (28)",
+          "Position": "-689.0483,-349.0064,-1.252651",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "91b9c324-72ed-49a1-a114-c72b267f5dee",
+          "Flags": 0,
+          "Name": "fence (29)",
+          "Position": "-686.5237,-134.0393,-1.25265",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "bff09f7f-c2bb-4af8-948a-22d4325a5938",
+          "Flags": 0,
+          "Name": "fence (33)",
+          "Position": "-689.0475,924.7905,-1.25265",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Scale": "0.6683972,1,1",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "d0d55296-0bce-4537-ab83-f9d3460b8b78",
+          "Flags": 0,
+          "Name": "fence (32)",
+          "Position": "-689.0477,740.7381,-1.25265",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "5b9d73dd-81ee-4295-bdea-13d33b9f1d01",
+          "Flags": 0,
+          "Name": "fence (31)",
+          "Position": "-689.0479,522.1356,-1.25265",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "6220c8c2-ae74-408a-8cfa-a4fa1c9cdac6",
+          "Flags": 0,
+          "Name": "fence (30)",
+          "Position": "-689.0479,303.1659,-1.25265",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "74813273-895b-493c-968a-e547f98692cf",
+          "Flags": 0,
+          "Name": "fence (27)",
+          "Position": "-689.0482,83.60684,-1.25265",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "192ed678-d1d5-4974-9117-463401fbc7ad",
+          "Flags": 0,
+          "Name": "fence (26)",
+          "Position": "-689.0484,-568.9985,-1.25265",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "d5df72b6-b14b-4ea4-a00c-262596ea2fbf",
+          "Flags": 0,
+          "Name": "fence (25)",
+          "Position": "-689.0485,-786.9059,-1.25265",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "415c4d0c-4c4c-45a1-8a75-3fff397c6e13",
+          "Flags": 0,
+          "Name": "fence (24)",
+          "Position": "-689.0486,-1005.213,-1.25265",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "857aa07d-6a0d-4a6f-b063-4a11046cd82f",
+          "Flags": 0,
+          "Name": "fence (23)",
+          "Position": "-569.3862,-1105.884,-1.252651",
+          "Rotation": "0,0,1,0.0000001947072",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "d3437431-d0de-4e07-978b-0f2c607ecf23",
+          "Flags": 0,
+          "Name": "fence (22)",
+          "Position": "-349.6806,-1105.884,-1.252651",
+          "Rotation": "0,0,1,0.0000001947072",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "7c666111-a523-44d4-a8ca-dc364f337a75",
+          "Flags": 0,
+          "Name": "fence (21)",
+          "Position": "-128.7197,-1105.884,-1.252651",
+          "Rotation": "0,0,1,0.0000001947072",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "dfe622f8-ba81-4727-b9c0-f71e761b5968",
+          "Flags": 0,
+          "Name": "fence (20)",
+          "Position": "89.74814,-1105.884,-1.252651",
+          "Rotation": "0,0,1,0.0000001947072",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "d6e8cfec-2680-4ac4-97a8-9f10c239593c",
+          "Flags": 0,
+          "Name": "fence (19)",
+          "Position": "308.2089,-1105.884,-1.252651",
+          "Rotation": "0,0,1,0.0000001947072",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "f4d4dc9e-bbc3-4235-8445-7b37b3432a0f",
+          "Flags": 0,
+          "Name": "fence (18)",
+          "Position": "521.1299,-1105.884,-1.252651",
+          "Rotation": "0,0,1,0.0000001947072",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "e567437c-21d8-4c63-b675-da1d9978062f",
+          "Flags": 0,
+          "Name": "fence (17)",
+          "Position": "737.1429,-1105.884,-1.252651",
+          "Rotation": "0,0,1,0.0000001947072",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "6e5aa81d-04fa-41a1-a8a5-66bef01ed571",
+          "Flags": 0,
+          "Name": "fence (15)",
+          "Position": "856.3648,-849.8652,-1.252651",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "67c9f697-a40f-430f-a131-dfbb72a0e11d",
+          "Flags": 0,
+          "Name": "fence (14)",
+          "Position": "856.3648,-629.1909,-1.252651",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "1114edd7-32e2-4e73-957a-90351b6a05d3",
+          "Flags": 0,
+          "Name": "fence (13)",
+          "Position": "856.3648,-409.923,-1.252651",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "c496a834-e795-4db0-8893-98f33419791c",
+          "Flags": 0,
+          "Name": "fence (12)",
+          "Position": "856.3648,-191.6562,-1.252651",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "18f8de63-b69b-4113-b885-f9aa53601c1a",
+          "Flags": 0,
+          "Name": "fence (11)",
+          "Position": "853.8624,28.22846,-0.9857764",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "31633e59-43af-4f12-83a3-96bb086f716a",
+          "Flags": 0,
+          "Name": "fence (10)",
+          "Position": "856.3648,247.2513,-1.252651",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "9515db54-4ac1-403d-a7f8-27dfa6583823",
+          "Flags": 0,
+          "Name": "fence (9)",
+          "Position": "856.3648,467.7104,-1.252651",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "1bcc7a0b-be6e-47cb-b21b-42c8f5fe3382",
+          "Flags": 0,
+          "Name": "fence (8)",
+          "Position": "856.3648,687.269,-1.252651",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "5492e6bd-88bd-4c3c-a669-863e462d702f",
+          "Flags": 0,
+          "Name": "fence (7)",
+          "Position": "856.3647,907.1791,-1.252651",
+          "Rotation": "0,0,-0.7071067,0.7071068",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        },
+        {
+          "__guid": "d7ac34d0-7b36-4fac-b91f-01ecc65b299d",
+          "Flags": 0,
+          "Name": "fence (6)",
+          "Position": "737.6276,1008.488,-1.252773",
+          "Tags": "tail",
+          "Enabled": true,
+          "__Prefab": "fence.prefab",
+          "__PrefabVariables": {}
+        }
+      ]
+    },
+    {
+      "__guid": "fa4ab386-328b-47ad-95e3-9ff952db7ba0",
+      "Flags": 0,
+      "Name": "InGameUi",
+      "Position": "-544.6671,403.8631,370.9147",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "933d11f9-7e5b-4fd1-8e25-c1cb28fcd951",
+          "AutoScreenScale": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Opacity": 1,
+          "Scale": 1,
+          "ScaleStrategy": "ConsistentHeight",
+          "ZIndex": 100
+        },
+        {
+          "__type": "Sandbox.MyUi",
+          "__guid": "b6acaab5-23e8-4367-b3c0-5e65c9c8feb5",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "pg": {
+            "_type": "component",
+            "component_id": "b6188ded-3872-4684-a277-93dc31d371fe",
+            "go": "4653cac8-1198-489f-a71b-8d03857d5471",
+            "component_type": "SnakeScript"
+          }
+        }
+      ]
+    },
+    {
+      "__guid": "a25f71cf-7d10-4bbd-ba46-dea31bbba8e7",
+      "Flags": 0,
+      "Name": "PauseHUD",
+      "Position": "-1077.565,-103.6075,464.5443",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "7c84118d-d24e-44f0-9a7e-1dda16fc09a0",
+          "AutoScreenScale": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Opacity": 1,
+          "Scale": 1,
+          "ScaleStrategy": "ConsistentHeight",
+          "ZIndex": 100
+        },
+        {
+          "__type": "Sandbox.PauseHUD",
+          "__guid": "af27df2f-470e-4942-9aad-ad930db735a7",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null
+        }
+      ]
+    },
+    {
+      "__guid": "8d577b7e-7e06-4147-98ef-3c1c72512d30",
+      "Flags": 0,
+      "Name": "DeathHUD",
+      "Position": "-1558.183,66.68002,631.6893",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "829c2f6b-4337-42c0-900a-5186612bbf58",
+          "AutoScreenScale": true,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "Opacity": 1,
+          "Scale": 1,
+          "ScaleStrategy": "ConsistentHeight",
+          "ZIndex": 45
+        },
+        {
+          "__type": "Sandbox.DeathHUD",
+          "__guid": "4203deae-9d83-4c4e-aaa8-b42ff38e50fb",
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "SnakeS": {
+            "_type": "component",
+            "component_id": "b6188ded-3872-4684-a277-93dc31d371fe",
+            "go": "4653cac8-1198-489f-a71b-8d03857d5471",
+            "component_type": "SnakeScript"
+          }
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 60,
+    "NetworkInterpolation": true,
+    "PhysicsSubSteps": 1,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "Metadata": {
+      "Title": "minimal"
+    },
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "ResourceVersion": 2,
+  "Title": "minimal",
+  "Description": null,
+  "__references": [],
+  "__version": 2
+}

@@ -1,0 +1,43 @@
+MainMenuScript {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: white;
+	font-size: 85px;
+	display: flex;
+	justify-content: space-between;
+	padding: 35px;
+	font-family: Poppins;
+	text-stroke: 12px black;
+	flex-direction: row;
+	pointer-events:all;
+
+	h2 {
+		font-size: 110px;
+		gap: 15px;
+	}
+
+	.menu {
+		text-align: left;
+	}
+
+	.Score {
+		text-align: right;
+	}
+
+	.menu {
+		flex-direction: column;
+	}
+
+	.buttons {
+		flex-direction: column;
+	}
+
+	.btn {
+		background-color: forestgreen;
+		border-radius: 15px;
+		margin-top: 15px;
+	}
+}

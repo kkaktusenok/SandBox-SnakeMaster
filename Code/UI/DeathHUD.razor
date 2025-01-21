@@ -1,0 +1,37 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+@namespace Sandbox
+
+<root class="@(SnakeS.isAlive ? "hide" : "")">
+	<h2>Game over</h2>
+    <div class="options">
+        <div class="button"onclick="@PlayAgain">
+            Play again
+        </div>
+        <div class="button" onclick="@QuitGame">
+            Main menu
+        </div>
+    </div>
+</root>
+
+@code
+{
+    [Property] SnakeScript SnakeS { get; set; }
+
+    void PlayAgain()
+    {
+        Scene.Load(Scene.Source);
+    }
+    void QuitGame()
+    {
+        var newScene = new SceneLoadOptions();
+        newScene.SetScene("scenes/mainmenu.scene");
+        Scene.Load(newScene);
+    }
+    protected override void OnUpdate()
+    {
+        if (SnakeS.isAlive == false) { Scene.TimeScale = SnakeS.isAlive ? 1 : 0; }
+    }
+    protected override int BuildHash() => System.HashCode.Combine(SnakeS.isAlive);
+}

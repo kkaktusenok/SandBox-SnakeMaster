@@ -1,0 +1,49 @@
+PauseHUD {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(black,0.8);
+	pointer-events: all;
+	color: white;
+	font-family: Poppins;
+	font-size: 64px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: opacity 0.5s ease;
+
+	> h2 {
+		font-size: 128px;
+		font-weight: bold;
+	}
+
+	.options {
+		align-items: center;
+		flex-direction: column;
+		gap:16px;
+
+		> .button {
+			background-color:white;
+			color:black;
+			padding:8px;
+			border-radius:32px;
+			transition: all 0.3s ease;
+
+			&:hover {
+				sound-in: ui.button.over;
+				background-color:#b2b2b2;
+				transform:scale(1.1);
+			}
+
+			&:active {
+				sound-in: ui.downvote;
+			}
+		}
+	}
+
+	&.hide {
+		opacity: 0;
+	}
+}
