@@ -12,8 +12,8 @@
         "BodyGroups": 18446744073709551615,
         "CreateAttachments": false,
         "MaterialGroup": null,
-        "MaterialOverride": "materials/default.vmat",
-        "Model": "models/dev/box.vmdl",
+        "MaterialOverride": "snakemodels/apple/applematerial.vmat",
+        "Model": "snakemodels/apple/apple_td3nedtla_raw.vmdl",
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
@@ -27,14 +27,14 @@
           "AfterUILayer": false
         },
         "RenderType": "On",
-        "Tint": "0.96279,0.02687,0.02687,1"
+        "Tint": "1,1,1,1"
       },
       {
         "__type": "Sandbox.BoxCollider",
         "__guid": "8ff0f4e6-4a72-4980-a0fb-88438159c2b6",
         "Center": "-0.1390591,-0.07891083,-0.03514099",
         "Friction": null,
-        "IsTrigger": true,
+        "IsTrigger": false,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
@@ -54,14 +54,9 @@
     "Children": [],
     "__variables": [],
     "__properties": {
-      "FixedUpdateFrequency": 50,
-      "MaxFixedUpdates": 5,
-      "NetworkFrequency": 30,
       "NetworkInterpolation": true,
-      "PhysicsSubSteps": 1,
-      "ThreadedAnimation": true,
       "TimeScale": 1,
-      "UseFixedUpdate": true,
+      "WantsSystemScene": true,
       "Metadata": {},
       "NavMesh": {
         "Enabled": false,

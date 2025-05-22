@@ -3,7 +3,7 @@
     "__guid": "99d5078a-e498-4b90-930a-368b1333237c",
     "Flags": 0,
     "Name": "fence",
-    "Tags": "tail",
+    "Tags": "fence",
     "Enabled": true,
     "Components": [
       {
@@ -31,10 +31,10 @@
       },
       {
         "__type": "Sandbox.BoxCollider",
-        "__guid": "16841352-bc51-4165-823a-9d3cb41c9a39",
-        "Center": "-0.5805511,3.310877,49.24524",
+        "__guid": "8c410198-88ea-4634-80f5-dcaae7d35b1a",
+        "Center": "-1.223145,1.336542,56.47558",
         "Friction": null,
-        "IsTrigger": true,
+        "IsTrigger": false,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
         "OnComponentEnabled": null,
@@ -45,7 +45,7 @@
         "OnObjectTriggerExit": null,
         "OnTriggerEnter": null,
         "OnTriggerExit": null,
-        "Scale": "219.7658,25.37825,130.4904",
+        "Scale": "223.0355,21.88099,118.8742",
         "Static": false,
         "Surface": null,
         "SurfaceVelocity": "0,0,0"
@@ -54,14 +54,9 @@
     "Children": [],
     "__variables": [],
     "__properties": {
-      "FixedUpdateFrequency": 50,
-      "MaxFixedUpdates": 5,
-      "NetworkFrequency": 30,
       "NetworkInterpolation": true,
-      "PhysicsSubSteps": 1,
-      "ThreadedAnimation": true,
       "TimeScale": 1,
-      "UseFixedUpdate": true,
+      "WantsSystemScene": true,
       "Metadata": {},
       "NavMesh": {
         "Enabled": false,

@@ -21,6 +21,7 @@
           "Opacity": 1,
           "Scale": 1,
           "ScaleStrategy": "ConsistentHeight",
+          "TargetCamera": null,
           "ZIndex": 50
         },
         {
@@ -34,7 +35,8 @@
           "OnComponentUpdate": null,
           "SoundFile": "sounds/bg.vsnd"
         }
-      ]
+      ],
+      "Children": []
     },
     {
       "__guid": "94dbfb57-88cc-49b6-8c9a-daf44766d4fd",
@@ -49,6 +51,7 @@
           "BackgroundColor": "0.33333,0.46275,0.52157,1",
           "ClearFlags": "All",
           "FieldOfView": 60,
+          "FovAxis": "Horizontal",
           "IsMainCamera": true,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
@@ -66,7 +69,8 @@
           "ZFar": 10000,
           "ZNear": 10
         }
-      ]
+      ],
+      "Children": []
     },
     {
       "__guid": "fff12e22-75b9-47ec-8e0d-b38afaf46709",
@@ -108,7 +112,8 @@
           "OnComponentStart": null,
           "OnComponentUpdate": null
         }
-      ]
+      ],
+      "Children": []
     },
     {
       "__guid": "05fbeb86-71d6-42d4-96ac-b2708493b1ca",
@@ -131,7 +136,8 @@
           "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
           "Tint": "1,1,1,1"
         }
-      ]
+      ],
+      "Children": []
     },
     {
       "__guid": "24313f69-b577-4551-b1f3-f0254d82789f",
@@ -186,7 +192,8 @@
           "Surface": null,
           "SurfaceVelocity": "0,0,0"
         }
-      ]
+      ],
+      "Children": []
     },
     {
       "__guid": "18f07c48-b21a-4e16-9523-fbd77608ca0f",
@@ -211,18 +218,14 @@
           "Shadows": true,
           "SkyColor": "0.2532,0.32006,0.35349,1"
         }
-      ]
+      ],
+      "Children": []
     }
   ],
   "SceneProperties": {
-    "FixedUpdateFrequency": 50,
-    "MaxFixedUpdates": 5,
-    "NetworkFrequency": 30,
     "NetworkInterpolation": true,
-    "PhysicsSubSteps": 1,
-    "ThreadedAnimation": true,
     "TimeScale": 1,
-    "UseFixedUpdate": true,
+    "WantsSystemScene": true,
     "Metadata": {},
     "NavMesh": {
       "Enabled": false,

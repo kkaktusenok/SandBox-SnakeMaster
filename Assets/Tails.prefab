@@ -60,25 +60,15 @@
         "OnComponentFixedUpdate": null,
         "OnComponentStart": null,
         "OnComponentUpdate": null,
-        "SnakeScript": {
-          "_type": "component",
-          "component_id": "b6188ded-3872-4684-a277-93dc31d371fe",
-          "go": "4653cac8-1198-489f-a71b-8d03857d5471",
-          "component_type": "SnakeScript"
-        }
+        "SnakeScript": null
       }
     ],
     "Children": [],
     "__variables": [],
     "__properties": {
-      "FixedUpdateFrequency": 50,
-      "MaxFixedUpdates": 5,
-      "NetworkFrequency": 30,
       "NetworkInterpolation": true,
-      "PhysicsSubSteps": 1,
-      "ThreadedAnimation": true,
       "TimeScale": 1,
-      "UseFixedUpdate": true,
+      "WantsSystemScene": true,
       "Metadata": {},
       "NavMesh": {
         "Enabled": false,

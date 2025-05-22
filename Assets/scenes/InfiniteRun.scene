@@ -25,7 +25,8 @@
           "Title": "minimal",
           "Version": null
         }
-      ]
+      ],
+      "Children": []
     },
     {
       "__guid": "bfc59c12-1ed2-4f91-8956-a95a315eac3c",
@@ -50,7 +51,8 @@
           "Shadows": true,
           "SkyColor": "0.2532,0.32006,0.35349,1"
         }
-      ]
+      ],
+      "Children": []
     },
     {
       "__guid": "00344a8c-fa5e-45ae-b12a-10bb781a1dc3",
@@ -92,13 +94,15 @@
           "OnComponentUpdate": null,
           "Projection": "Sphere",
           "RenderDynamically": false,
+          "Resolution": "Small",
           "Texture": "textures/cubemaps/default2.vtex",
           "TintColor": "1,1,1,1",
           "UpdateStrategy": "OnEnabled",
           "ZFar": 4096,
           "ZNear": 16
         }
-      ]
+      ],
+      "Children": []
     },
     {
       "__guid": "6ad70641-3c6c-4402-9c85-9a4969af4764",
@@ -151,7 +155,8 @@
           "Surface": null,
           "SurfaceVelocity": "0,0,0"
         }
-      ]
+      ],
+      "Children": []
     },
     {
       "__guid": "addf7368-9067-449a-9100-3c741586a467",
@@ -168,6 +173,7 @@
           "BackgroundColor": "0.33333,0.46275,0.52157,1",
           "ClearFlags": "All",
           "FieldOfView": 65.78,
+          "FovAxis": "Horizontal",
           "IsMainCamera": true,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
@@ -185,7 +191,8 @@
           "ZFar": 10000,
           "ZNear": 10
         }
-      ]
+      ],
+      "Children": []
     },
     {
       "__guid": "4653cac8-1198-489f-a71b-8d03857d5471",
@@ -222,7 +229,7 @@
           "__guid": "2cfbbfad-4e9a-4e21-82d3-31fd5a437fdb",
           "Center": "-28.62826,-0.4915428,25.11504",
           "Friction": null,
-          "IsTrigger": false,
+          "IsTrigger": true,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -250,6 +257,12 @@
             "_type": "gameobject",
             "prefab": "food.prefab"
           },
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
           "Speed": 350,
           "TailEnd": {
             "_type": "gameobject",
@@ -258,22 +271,19 @@
           "TailPart": {
             "_type": "gameobject",
             "prefab": "tails.prefab"
-          },
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null
+          }
         }
-      ]
+      ],
+      "Children": []
     },
     {
       "__guid": "6a48a49e-9fac-41d8-b3f7-c7e63db5ee96",
       "Flags": 0,
       "Name": "Object",
       "Position": "-7.699574,415.3374,30",
-      "Enabled": true
+      "Enabled": true,
+      "Components": [],
+      "Children": []
     },
     {
       "__guid": "b1c684c0-b974-402d-8298-d199a9d0f91a",
@@ -281,13 +291,14 @@
       "Name": "FenceHolder",
       "Position": "-78.9742,40.66604,1.747066",
       "Enabled": true,
+      "Components": [],
       "Children": [
         {
           "__guid": "81612229-5903-4805-b66d-cad847ca9bc1",
           "Flags": 0,
           "Name": "fence (34)",
           "Position": "-580.902,1008.488,-1.252773",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -297,7 +308,7 @@
           "Flags": 0,
           "Name": "fence (1)",
           "Position": "-363.2152,1007.595,-1.252773",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -307,7 +318,7 @@
           "Flags": 0,
           "Name": "fence (2)",
           "Position": "-142.6835,1008.488,-1.252773",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -317,7 +328,7 @@
           "Flags": 0,
           "Name": "fence (3)",
           "Position": "77.27783,1008.488,-1.252773",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -327,7 +338,7 @@
           "Flags": 0,
           "Name": "fence (4)",
           "Position": "297.7467,1008.488,-1.252773",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -337,7 +348,7 @@
           "Flags": 0,
           "Name": "fence (5)",
           "Position": "516.7626,1008.488,-1.252773",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -349,7 +360,7 @@
           "Position": "856.3648,-1035.274,-1.252651",
           "Rotation": "0,0,-0.7071067,0.7071068",
           "Scale": "0.6900641,1,1",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -360,7 +371,7 @@
           "Name": "fence (28)",
           "Position": "-689.0483,-349.0064,-1.252651",
           "Rotation": "0,0,0.7071067,0.7071068",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -371,7 +382,7 @@
           "Name": "fence (29)",
           "Position": "-686.5237,-134.0393,-1.25265",
           "Rotation": "0,0,0.7071067,0.7071068",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -383,7 +394,7 @@
           "Position": "-689.0475,924.7905,-1.25265",
           "Rotation": "0,0,0.7071067,0.7071068",
           "Scale": "0.6683972,1,1",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -394,7 +405,7 @@
           "Name": "fence (32)",
           "Position": "-689.0477,740.7381,-1.25265",
           "Rotation": "0,0,0.7071067,0.7071068",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -405,7 +416,7 @@
           "Name": "fence (31)",
           "Position": "-689.0479,522.1356,-1.25265",
           "Rotation": "0,0,0.7071067,0.7071068",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -416,7 +427,7 @@
           "Name": "fence (30)",
           "Position": "-689.0479,303.1659,-1.25265",
           "Rotation": "0,0,0.7071067,0.7071068",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -427,7 +438,7 @@
           "Name": "fence (27)",
           "Position": "-689.0482,83.60684,-1.25265",
           "Rotation": "0,0,0.7071067,0.7071068",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -438,7 +449,7 @@
           "Name": "fence (26)",
           "Position": "-689.0484,-568.9985,-1.25265",
           "Rotation": "0,0,0.7071067,0.7071068",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -449,7 +460,7 @@
           "Name": "fence (25)",
           "Position": "-689.0485,-786.9059,-1.25265",
           "Rotation": "0,0,0.7071067,0.7071068",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -460,7 +471,7 @@
           "Name": "fence (24)",
           "Position": "-689.0486,-1005.213,-1.25265",
           "Rotation": "0,0,0.7071067,0.7071068",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -471,7 +482,7 @@
           "Name": "fence (23)",
           "Position": "-569.3862,-1105.884,-1.252651",
           "Rotation": "0,0,1,0.0000001947072",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -482,7 +493,7 @@
           "Name": "fence (22)",
           "Position": "-349.6806,-1105.884,-1.252651",
           "Rotation": "0,0,1,0.0000001947072",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -493,7 +504,7 @@
           "Name": "fence (21)",
           "Position": "-128.7197,-1105.884,-1.252651",
           "Rotation": "0,0,1,0.0000001947072",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -504,7 +515,7 @@
           "Name": "fence (20)",
           "Position": "89.74814,-1105.884,-1.252651",
           "Rotation": "0,0,1,0.0000001947072",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -515,7 +526,7 @@
           "Name": "fence (19)",
           "Position": "308.2089,-1105.884,-1.252651",
           "Rotation": "0,0,1,0.0000001947072",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -526,7 +537,7 @@
           "Name": "fence (18)",
           "Position": "521.1299,-1105.884,-1.252651",
           "Rotation": "0,0,1,0.0000001947072",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -537,7 +548,7 @@
           "Name": "fence (17)",
           "Position": "737.1429,-1105.884,-1.252651",
           "Rotation": "0,0,1,0.0000001947072",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -548,7 +559,7 @@
           "Name": "fence (15)",
           "Position": "856.3648,-849.8652,-1.252651",
           "Rotation": "0,0,-0.7071067,0.7071068",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -559,7 +570,7 @@
           "Name": "fence (14)",
           "Position": "856.3648,-629.1909,-1.252651",
           "Rotation": "0,0,-0.7071067,0.7071068",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -570,7 +581,7 @@
           "Name": "fence (13)",
           "Position": "856.3648,-409.923,-1.252651",
           "Rotation": "0,0,-0.7071067,0.7071068",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -581,7 +592,7 @@
           "Name": "fence (12)",
           "Position": "856.3648,-191.6562,-1.252651",
           "Rotation": "0,0,-0.7071067,0.7071068",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -592,7 +603,7 @@
           "Name": "fence (11)",
           "Position": "853.8624,28.22846,-0.9857764",
           "Rotation": "0,0,-0.7071067,0.7071068",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -603,7 +614,7 @@
           "Name": "fence (10)",
           "Position": "856.3648,247.2513,-1.252651",
           "Rotation": "0,0,-0.7071067,0.7071068",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -614,7 +625,7 @@
           "Name": "fence (9)",
           "Position": "856.3648,467.7104,-1.252651",
           "Rotation": "0,0,-0.7071067,0.7071068",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -625,7 +636,7 @@
           "Name": "fence (8)",
           "Position": "856.3648,687.269,-1.252651",
           "Rotation": "0,0,-0.7071067,0.7071068",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -636,7 +647,7 @@
           "Name": "fence (7)",
           "Position": "856.3647,907.1791,-1.252651",
           "Rotation": "0,0,-0.7071067,0.7071068",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -646,7 +657,7 @@
           "Flags": 0,
           "Name": "fence (6)",
           "Position": "737.6276,1008.488,-1.252773",
-          "Tags": "tail",
+          "Tags": "tail,fence",
           "Enabled": true,
           "__Prefab": "fence.prefab",
           "__PrefabVariables": {}
@@ -673,6 +684,7 @@
           "Opacity": 1,
           "Scale": 1,
           "ScaleStrategy": "ConsistentHeight",
+          "TargetCamera": null,
           "ZIndex": 100
         },
         {
@@ -691,7 +703,8 @@
             "component_type": "SnakeScript"
           }
         }
-      ]
+      ],
+      "Children": []
     },
     {
       "__guid": "a25f71cf-7d10-4bbd-ba46-dea31bbba8e7",
@@ -713,6 +726,7 @@
           "Opacity": 1,
           "Scale": 1,
           "ScaleStrategy": "ConsistentHeight",
+          "TargetCamera": null,
           "ZIndex": 100
         },
         {
@@ -725,7 +739,8 @@
           "OnComponentStart": null,
           "OnComponentUpdate": null
         }
-      ]
+      ],
+      "Children": []
     },
     {
       "__guid": "8d577b7e-7e06-4147-98ef-3c1c72512d30",
@@ -747,6 +762,7 @@
           "Opacity": 1,
           "Scale": 1,
           "ScaleStrategy": "ConsistentHeight",
+          "TargetCamera": null,
           "ZIndex": 45
         },
         {
@@ -765,18 +781,14 @@
             "component_type": "SnakeScript"
           }
         }
-      ]
+      ],
+      "Children": []
     }
   ],
   "SceneProperties": {
-    "FixedUpdateFrequency": 50,
-    "MaxFixedUpdates": 5,
-    "NetworkFrequency": 60,
     "NetworkInterpolation": true,
-    "PhysicsSubSteps": 1,
-    "ThreadedAnimation": true,
     "TimeScale": 1,
-    "UseFixedUpdate": true,
+    "WantsSystemScene": true,
     "Metadata": {
       "Title": "minimal"
     },

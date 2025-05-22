@@ -53,7 +53,7 @@ public sealed class SnakeScript : Component, Component.ITriggerListener
 		var newFood = Food.Clone();
 		var randomX = new Random().Next( -719, 719 ) ;
 		var randomY = new Random().Next( -1014, 1010 );
-		newFood.WorldPosition = new Vector3( randomX, randomY, 30 );
+		newFood.WorldPosition = new Vector3( randomX, randomY, 40 );
 		newFood.Transform.ClearInterpolation();
 	}
 
@@ -75,9 +75,9 @@ public sealed class SnakeScript : Component, Component.ITriggerListener
 			//creating new food
 			SpawnFood();
 		}
-		if(other.Tags.Has( "tail" ) )
+		if ( other.Tags.Has( "tail" ) && applesEaten > 1 || other.Tags.Has("Fence"))
 		{
-			Sandbox.Services.Stats.SetValue("FoodEaten",applesEaten);
+			Sandbox.Services.Stats.SetValue( "FoodEaten", applesEaten );
 			isAlive = false;
 		}
 	}
